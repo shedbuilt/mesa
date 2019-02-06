@@ -1,0 +1,10 @@
+NAME=mesa
+VERSION=19.0.0-rc2
+REVISION=1
+LICENSE=MIT
+SRC=https://mesa.freedesktop.org/archive/mesa-19.0.0-rc2.tar.gz
+SRCMD5=924c13f974d2db172080e28788dc9270
+BUILDDEPS=meson ninja python_mako libdrm wayland wayland-protocols
+INSTALLDEPS=libdrm wayland wayland-protocols
+OPTIONS=(panfrost)
+DEFAULTS=
