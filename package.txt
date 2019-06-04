@@ -7,4 +7,5 @@ SRCMD5=b95104cfa0edcd5877f3d58197e145bb
 BUILDDEPS=meson ninja python_mako libdrm wayland:wayland wayland:wayland-protocols
 INSTALLDEPS=libdrm wayland:wayland wayland:wayland-protocols
 OPTIONS=(lima|panfrost) (wayland)
+ALIASES=allh5cc|nanopik1plus|nanopineo2|nanopineoplus2|orangepipc2|allh3cc|nanopineo|nanopim1plus|orangepione|orangepipc|orangepilite:lima
 DEFAULTS=
