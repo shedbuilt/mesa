@@ -1,6 +1,6 @@
 NAME=mesa
 VERSION=19.1.0-rc4
-REVISION=2
+REVISION=3
 LICENSE=MIT
 SRC=https://mesa.freedesktop.org/archive/mesa-19.1.0-rc4.tar.xz
 SRCMD5=b95104cfa0edcd5877f3d58197e145bb
