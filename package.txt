@@ -1,9 +1,9 @@
 NAME=mesa
-VERSION=19.1.0-rc4
-REVISION=3
+VERSION=19.1.0
+REVISION=4
 LICENSE=MIT
-SRC=https://mesa.freedesktop.org/archive/mesa-19.1.0-rc4.tar.xz
-SRCMD5=b95104cfa0edcd5877f3d58197e145bb
+SRC=https://mesa.freedesktop.org/archive/mesa-19.1.0.tar.xz
+SRCMD5=090cd351cf938fc1729dee983520216a
 BUILDDEPS=meson ninja python_mako libdrm wayland:wayland wayland:wayland-protocols
 INSTALLDEPS=libdrm wayland:wayland wayland:wayland-protocols
 OPTIONS=(lima|panfrost) (wayland)
