@@ -16,15 +16,19 @@ mkdir build &&
 cd build &&
 meson --prefix=/usr                    \
       --sysconfdir=/etc                \
+      -Dbuildtype=release              \
       -Ddri-drivers=                   \
       -Dvulkan-drivers=                \
       -Dgallium-drivers=${SHED_PKG_LOCAL_GALLIUM_DRIVERS} \
-      -Dlibunwind=false                \
       -Dplatforms=${SHED_PKG_LOCAL_PLATFORMS} \
       -Dgbm=true                       \
       -Degl=true                       \
       -Dllvm=false                     \
+      -Dosmesa=gallium                 \
       -Dglx=disabled                   \
+      -Dvalgrind=false                 \
+      -Dlibunwind=false                \
+      -Dgallium-nine=false             \
       ..                              &&
 NINJAJOBS=$SHED_NUM_JOBS ninja &&
 DESTDIR="$SHED_FAKE_ROOT" ninja install || exit 1
